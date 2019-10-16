@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-    <v-accordion :initial-tab-index="0">
+    <v-accordion :initial-tab-index="1" :horizontal="true">
       <v-accordion-tab>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit dicta neque quos voluptatibus nemo, blanditiis accusantium placeat, error voluptates iure ipsam aspernatur atque sed delectus reiciendis repellat dolorum possimus.</v-accordion-tab>
       <v-accordion-tab>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit dicta neque quos voluptatibus nemo, blanditiis accusantium placeat, error voluptates iure ipsam aspernatur atque sed delectus reiciendis repellat dolorum possimus.</v-accordion-tab>
       <v-accordion-tab>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam impedit dicta neque quos voluptatibus nemo, blanditiis accusantium placeat, error voluptates iure ipsam aspernatur atque sed delectus reiciendis repellat dolorum possimus.</v-accordion-tab>

@@ -1,5 +1,5 @@
 <template>
-  <div @click="toggleTab" class="accordion-tab" >
+  <div @click="toggleTab" class="accordion-tab" :class="{horizontal: horizontal}">
     <div class="tab-head">Tab {{index + 1}}</div>
     <div class="tab-body" v-show="opened">
       <slot></slot>
@@ -13,6 +13,7 @@ export default {
   data() {
     return {
       opened: false,
+      horizontal: false,
       index: 0
     };
   },
@@ -29,7 +30,13 @@ export default {
 
 <style scoped>
 .accordion-tab {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 2px;
+}
+
+.accordion-tab.horizontal {
+  flex-direction: row;
 }
 
 .tab-head {
